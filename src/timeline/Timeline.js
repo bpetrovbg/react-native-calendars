@@ -92,7 +92,7 @@ const Timeline = props => {
     } else if (scrollToFirst && packedEvents[0].length > 0) {
       initialPosition = min(map(packedEvents[0], 'top')) ?? 0;
     } else if (initialTime) {
-      initialPosition = calcTimeOffset(hourBlockHeight, initialTime.hour, initialTime.minutes);
+      initialPosition = calcTimeOffset(hourBlockHeight, initialTime.hour, initialTime.minutes, start);
     }
     if (initialPosition) {
       setTimeout(() => {
