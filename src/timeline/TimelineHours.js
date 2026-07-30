@@ -69,7 +69,7 @@ const TimelineHours = props => {
   return (
     <>
       <TouchableWithoutFeedback onLongPress={handleBackgroundPress} onPressOut={handlePressOut}>
-        <View style={StyleSheet.absoluteFillObject} />
+        <View style={StyleSheet.absoluteFill} />
       </TouchableWithoutFeedback>
       {unavailableHoursBlocks.map((block, index) => (
         <View
